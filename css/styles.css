@@ -1,0 +1,22 @@
+.principal{background-image: url(../img/old-books-arrangement-with-copy-space.jpg);
+background-size: contain;
+height: 50rem;}
+
+.top-seller{background-color: rgb(24, 24, 48);
+}
+
+.contacto-pag{
+    background-image: url(../img/creative-composition-with-different-books.jpg);
+    height: 100vh;
+    background-size: cover;
+    
+}
+
+.form-inicio{
+    background-color: whitesmoke;
+    
+ width: 40vw;
+    justify-self: center;
+    align-self: center;
+
+}

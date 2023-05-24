@@ -47,14 +47,44 @@
       </nav>
       <main >
         <div class="d-flex flex-column form-inicio">
-            <div class="mb-3 d-flex">
-                <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
+          <section class="d-flex crear_cuenta flex-column align-items-center">
+            <form>
+                <div class="fondo_apertura flex-column d-flex justify-content-center">
+                  
+                    <div class=" mb-3 apertura d-flex flex-column ">
+                        <h1>Crea tu cuenta</h1>
+                        <label for="labelNombre" class="form-label">Primer nombre</label>
+                        <input type="text" class="form-control" id="inputNombre" required  placeholder="Ingresa tu nombre...">
+                        <label for="labelApellido" class="form-label">Primer apellido</label>
+                        <input type="text" class="form-control" id="InputApellido" required  placeholder="Ingresa tu apellido...">
+                        <label for="labelFechaNacimiento" class="form-label">Fecha de nacimiento</label>
+                        <input type="date" class="form-control" id="inputFechaNacimiento" required>
+                        <label for="labelEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="inputEmail"  required placeholder="Ingresa tu email...">
+                        <label for="labelPassword" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="inputPassword"required placeholder="Ingresa una contraseña...">
+                        <label for="labelPassword" class="form-label">Repite tu contraseña</label>
+                        <input type="password" class="form-control" id="inputPassword" required placeholder="Repite tu contraseña...">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checklist" required>
+                            <label class="form-check-label" for="checklist">
+                              Acepto Términos y Condiciones
+                            </label>
+                        </div>
+                          <div class="form-check d-flex">
+                            <input class="form-check-input" type="checkbox" value="" id="checklist" checked>
+                            <label class="form-check-label" for="checklist">
+                              Quiero recibir promociones y boletines informativos
+                            </label>
+                          </div>
+                        <div class=" d-flex justify-content-center">
+                            <button type="submit" class="boton_cuenta"> Enviar</button>
+                            <button type="reset" class="boton_cuenta">Borrar</button>
+                        </div>
+                    </div>
+                        
+                </div>
+            </form>
         </div>
         
 

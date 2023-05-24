@@ -12,11 +12,15 @@ height: 50rem;}
     
 }
 
-.form-inicio{
-    background-color: whitesmoke;
-    
- width: 40vw;
-    justify-self: center;
-    align-self: center;
 
+
+.fondo_apertura{
+    margin-top: 8rem;
+    display:flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.fondo_inicio_sesion{
+    margin-top: 8rem;
 }

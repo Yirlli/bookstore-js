@@ -1,3 +1,11 @@
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
+a{  list-style: none;
+    text-decoration: none;}
+
 .principal{background-image: url(../img/old-books-arrangement-with-copy-space.jpg);
 background-size: contain;
 height: 50rem;}
@@ -24,3 +32,46 @@ height: 50rem;}
 .fondo_inicio_sesion{
     margin-top: 8rem;
 }
+
+
+.main-carrito{
+    background-color: rgb(241, 235, 227);
+    padding: 10rem;
+    border-radius: 2rem;
+}
+.carrito{
+    background-color: bisque;
+    padding-top: 10rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 20rem;
+    border-radius: 2rem;
+
+}
+
+.carrito h2,h3{text-align: center;
+padding: 1.5rem;}
+
+.carrito button{ width: 18rem;
+    border-radius: 2rem;
+    background-color: blueviolet;
+align-self: center;
+color: aliceblue;}
+
+.carrito a{color: aliceblue;
+    font-size: 20px;
+
+}
+
+
+.titulo_todas_las_asesorias{text-align: center;
+padding-top: 4rem;
+padding-bottom: 4rem;}
+
+.main-productos{
+   background-color: rgb(224, 221, 218);}
+
+.carrito-vacio{
+    width: 80px;}

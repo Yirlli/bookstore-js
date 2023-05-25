@@ -35,11 +35,12 @@ const contenedorProductos = document.querySelector("#contenedor-productos");
 function cargarProductos(){
 productos.forEach(producto => {
     const div = document.createElement("div");
-    div.classList.add("row");
-    div.classList.add("d-flex");
-    div.classList.add("gy-5");
+    div.classList.add("col-12");
+    div.classList.add("col-sm-6");
+    div.classList.add("col-md-4");
+    div.classList.add("col-xl-3");
 
-    div.innerHTML = `<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+    div.innerHTML = `
                         <div class="card producto">
                         <img class="producto-imagen card-img-top " src="${producto.imagen}" alt="${producto.titulo}">
                         <div class="producto-detalle card-body ">
@@ -47,7 +48,7 @@ productos.forEach(producto => {
                         <p class="producto-precio producto-precio">${producto.precio}</p>
                         <p class="producto-precio">${producto.categoria}</p>
                         <button class="producto-agregar" id="${producto.sku}">Agregar al carrito</button>
-                        </div>
+                        
                     </div> `;
 
                     contenedorProductos.append(div);

@@ -94,10 +94,13 @@ function actualizarBotonesAgregar(){
 }
 
 let productosEnCarrito;
-const productosEnCarritoLS = JSON.parse(localStorage.getItem("productos-en-carrito"));
+const productosEnCarritoLS = localStorage.getItem("productos-en-carrito")
+
+
 
 if(productosEnCarritoLS){
-    let productosEnCarrito = productosEnCarritoLS
+    productosEnCarrito = JSON.parse(productosEnCarritoLS)
+    actualizarNumerito();
 }else{
     productosEnCarrito = [];
 

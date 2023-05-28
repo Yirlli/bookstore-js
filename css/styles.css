@@ -4,7 +4,8 @@
 }
 
 a{  list-style: none;
-    text-decoration: none;}
+    text-decoration: none;
+color: black;}
 
 .principal{background-image: url(../img/old-books-arrangement-with-copy-space.jpg);
 background-size: contain;
@@ -33,7 +34,77 @@ height: 50rem;}
     margin-top: 8rem;
 }
 
+.navbar{
+    background-color: rgb(162, 74, 39) ;
+    padding: 2rem;
+}
+.menu{ background-color: rgb(162, 74, 39) ;
+height: 130vh;
+padding-top: 5rem;
+border-radius: .5rem;
+padding-right: 0;}
 
+.boton-menu{
+    border-radius: .2rem;
+    background-color: rgb(246, 192, 137);
+    width: 15vw;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+    border: none;
+}
+
+.boton-carrito{
+    margin-top: 6rem;
+    margin-right: .1rem;
+    margin-left: 3rem;
+    background-color: white;
+    padding: .28rem;
+    color: black;
+   
+}
+
+.boton-libro{
+    background-color: rgb(246, 192, 137);
+    border: none;
+    border-radius: 1rem;
+    margin: .2rem;
+}
+
+.boton-libro:hover{
+    background-color: rgb(134, 91, 47);
+   
+}
+.producto-imagen{
+   
+}
+
+.suscribe_boletin{
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+
+}
+.suscribe_boletin h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+.suscribe_boletin input{
+    width: 40vw;
+    align-self: center;
+}
+
+.suscribe_boletin button{
+    width: 10vw;
+    align-self: center;
+    margin-top: 1.3rem;
+    background-color: rgb(246, 192, 137);
+    border-radius: 1rem;
+    border: none;
+}
+
+.volver{
+    margin-top: 4rem;
+}
 .main-carrito{
     background-color: rgb(241, 235, 227);
     padding: 10rem;
@@ -76,7 +147,31 @@ padding-bottom: 4rem;}
 /*carrito de compras*/
 
 
+.carrito-vacio h2{
+    font-size: 25px;
+}
+.carrito-vacio button{
+    margin-top: 2rem;
+    background-color: rgb(134, 91, 47);
+    width: 18vw;
+    align-self: center;
+    border-radius: 1rem;
+    border: none;
+}
 
+.on{
+    background-image: url(../img/studio-shot-joyful-european-woman-wears-round-spectacles-holds-many-books.jpg);
+background-size: cover;
+height: 150vh;
+background-color: none;
+padding-top: 0;
+padding-bottom: 0rem;
+
+}
+.carrito-vacio h3{
+    margin-top: 1rem;
+    font-size: 20px;
+}
 
 .carrito-productos{
     display: flex;
@@ -88,7 +183,7 @@ padding-bottom: 4rem;}
     display: flex;
     justify-content: space-between;
     background-color: rgba(221, 210, 188, 0.849);
-    padding: 0.5rem;
+    padding: 0.8rem;
     border-radius: 1rem;
     align-items: center;
 }
@@ -98,14 +193,17 @@ padding-bottom: 4rem;}
 }
 
 .carrito-producto small{
-    font-size: .75rem;
+    font-size: .85rem;
+    font-weight: bold;
 }
 
 .carrito-producto-eliminar{
     border: 0;
     background-color: transparent;
-    width: 10vw;
+    width: 7vw;
     cursor: pointer;
+    font-size: 10px;
+    
 }
 
 .carrito-acciones{
@@ -120,6 +218,8 @@ padding-bottom: 4rem;}
     border-radius: 1rem;
     text-transform: uppercase;
     cursor: pointer;
+    margin-top: 2rem;
+    margin-left: 1rem;
 }
 
 .carrito-acciones-comprar{
@@ -129,6 +229,8 @@ padding-bottom: 4rem;}
     border-radius: 1rem;
     text-transform: uppercase;
     cursor: pointer;
+    margin-top: 2rem;
+    margin-right: 2rem;
 }
 
 .carrito-acciones-derecha{
@@ -138,20 +240,29 @@ padding-bottom: 4rem;}
 .carrito-acciones-total{
     display: flex;
     background-color: rgba(221, 210, 188, 0.849);
-    padding: 1rem;
+    padding: .5rem;
     border-radius: 1rem;
     text-transform: uppercase;
     cursor: pointer;
     border-top-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     gap: 1rem;
+    margin-top: 2rem;
+    margin-right: 1rem;
 }
 
+.carrito-comprado{
+    font-weight: bold;
+    font-size: 30px;
+    width: 30vw;
+}
 .disabled{
     display: none;
 }
 
 .numero{
     background-color: white;
-    padding: 0.5rem
+    padding: .25rem;
+    border-radius: 1rem;
+    
 }

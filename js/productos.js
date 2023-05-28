@@ -16,7 +16,7 @@ class Libro { constructor (titulo, imagen,autor, editorial,precio,stock,categori
 const en_la_sombra = new Libro("En La Sombra" ,"../img/sombra.harry.jpg", "Principe Harry","Plaza & Janes", 13600, 25, "Biografía", "biografia", "AA183");
 const reina_charlotte = new Libro("La reina Charlotte", "../img/reina.charlotte.jpg","Julia Quinn y Shonda Rhimess","Titania", 17480, 125, "Novelas románticas","romanticas", "AA153");
 const dolor_no_es_mio= new Libro("Este dolor no es mío","../img/este.dolor.jpg","Mark Wolynn", "Gaia", 25990, 20, "Autoayuda", "autoayuda", "AA153");
-const muchas_vidas = new Libro("Muchas vidas", "../img/muchas.vidas.jpg","muchos maestros","Brian Weiss", "B de bolsillo", 8500, 205, "autoayuda", "Autoayuda", "AA1443");
+const muchas_vidas = new Libro("Muchas vidas, muchos maestros", "../img/muchas.vidas.jpg","Brian Weiss", "B de bolsillo", 8500, 205, "autoayuda", "Autoayuda", "AA1443");
 
 const roma_soy_yo = new Libro("Roma soy yo","../img/roma.soy.jpg" ,"Santiago Posteguillo","B de bolsillo" , 17500, 55, "Historia", "historia", "AA186");
 const una_magia_oscura = new Libro("Una magia más oscura", "../img/una.magia.jpg" , "V.E Schwab", "Destino ", 29130, 89, "Ficción", "ficcion","AB154");
@@ -49,10 +49,13 @@ function cargarProductos(productosElegidos){
                         <div class="card producto">
                         <img class="producto-imagen card-img-top " src="${producto.imagen}" alt="${producto.titulo}">
                         <div class="producto-detalle card-body ">
-                        <h5 class="producto-titulo card-title">${producto.autor}</h3>
-                        <p class="producto-precio producto-precio">${producto.precio}</p>
-                        <p class="producto-precio">${producto.categoria}</p>
-                        <button class="producto-agregar" id="${producto.id}">Agregar al carrito</button>
+                        <h4 class="card-title producto-titulo">${producto.titulo}</h4>
+                        <h6 class="producto-autor">${producto.autor}</h6>
+                        <p class="producto-categoria">${producto.categoria}</p>
+                        <p class="producto-precio producto-precio">$${producto.precio}</p>
+                        <button class="producto-agregar boton-libro" id="${producto.id}">Agregar al carrito</button>
+                        <button class="producto-agregar boton-libro" id="${producto.id}">Ver detalle</button>
+                        <button class="producto-agregar boton-libro" id="${producto.id}">Comprar ahora</button>
                         
                     </div> `;
 

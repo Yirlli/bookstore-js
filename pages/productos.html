@@ -48,9 +48,21 @@
         
     <main class="main-productos">   
         <h1 class="titulo_todas_las_asesorias" id="titulo-todos">Todos los libros</h1>
+        <div class="btn-group">
+          <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Filtrar por
+          </button>
+          <ul class="dropdown-menu" name="cars" id="cars">
+           <li><button class="filtrarPor"id="menor500">Menor a 500</button> </li>
+           <li><button class="filtrarPor" id="mayor500">Mayor a 500</button> </li>
+           
+       
+          </ul>
+          
+        </div>
         <section class="todas_las_asesorias d-flex">
             <section class="d-flex barra_lateral">
-                <aside class="">
+                <aside>
                     <nav>
                         <ul class="menu">
                             <li><button id="todos"class="boton-menu boton-categoria active">Todas las categorías</button></li>
@@ -63,7 +75,7 @@
                             <li><button id="infantil"class="boton-menu boton-categoria">Literatura Infantil</button></li>
                             <li><a class ="boton-carrito boton-menu" href="./carrito.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
                                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                              </svg></i> Carrito</span></a> <span class="numero" id="numero">0 </li>
+                              </svg></i> Carrito</span></a> <span class="CantidadCarrito" id="CantidadCarrito">0 </li>
                               
 
                             
@@ -72,20 +84,7 @@
                             Copryght 2023
                         </footer>
                     </nav>
-                    <!-----<div class="list-group">
                     
-                        <a href="#" class="list-group-item list-group-item-action  active">Todas las categorías</a>
-                        <a href="#" class="list-group-item list-group-item-action">Biografía</a>
-                        <a href="#" class="list-group-item list-group-item-action">Novelas de amor</a>
-                        <a href="#" class="list-group-item list-group-item-action">Ficción</a>
-                        <a href="#" class="list-group-item list-group-item-action">Autoayuda</a>
-                        <a href="#" class="list-group-item list-group-item-action">Historia</a>
-                        <a href="#" class="list-group-item list-group-item-action">Literatura Infantil</a>
-                        <li><a class ="boton-carrito" href="./carrito.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
-                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                          </svg></i> Carrito <span class="numero"> 1</span></a> </li>
-                        
-                      </div>------>
                   
                 </aside>
             </section>
@@ -93,142 +92,7 @@
             
               <div class="container-md text-center box_categorias row flex gy-5 " id="contenedor-productos">
                 
-                <!----  <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                    <div class="card producto">
-                      <img src="../img/sombra.harry.jpg" class="card-img-top producto-imagen" alt="en_la_sombra">
-                        <div class="card-body producto-detalles">
-                          <h5 class="card-title producto-titulo">En la sombra</h5>
-                          <p class="producto-precio">$13.600</p>
-                          <p class="card-text">Enrique, duque de Sussex (nacido como Henry Charles Albert David;a​ Paddington, Londres; 15 de septiembre de 1984), ​también llamado popularmente Harry, es el menor de los dos hijos del actual rey Carlos III del Reino Unido
-                          </p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                          <a href="#" class="btn btn-primary">Ver detalle</a>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                    <div class="card producto" >
-                      <img src="../img/reina.charlotte.jpg" class="card-img-top producto-imagen" alt="scrum">
-                        <div class="card-body producto-detalle">
-                          <h5 class="card-title producto-titulo">La reina Charlotte</h5>
-                          <p class="producto-precio">$17.480</p>
-                          <p class="card-text">Llega una novela poderosa y romántica sobre la épica historia de amor entre la reina Carlota y el rey Jorge III, de los Bridgerton y de cómo cambió la sociedad.</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                    <div class="card producto">
-                      <img src="../img/este.dolor.jpg" class="card-img-top producto-imagen" alt="product_owner">
-                        <div class="card-body  producto-detalle">
-                          <h5 class="card-title producto-titulo">Este dolor no es mío</h5>
-                          <p class="producto-precio">$25.990</p>
-                          <p class="card-text">Depresión, ansiedad, dolores crónicos, fobias, pensamientos obsesivos. La evidencia científica muestra que los traumas pueden ser heredados..</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                    <div class="card producto" >
-                      <img src="../img/muchas.vidas.jpg" class="card-img-top producto-imagen" alt="desarrollo_web">
-                        <div class="card-body  producto-detalle">
-                          <h5 class="card-title producto-titulo">Muchas vidas, muchos maestros</h5>
-                          <p class="producto-precio">$8.500</p>
-                          <p class="card-text">La historia real de un psiquiatra, su joven paciente y la terapia de regresión que cambió sus vidas para siempre. Un punto de encuentro entre ciencia y metafísica.</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                    <div class="card producto">
-                      <img src="../img/roma.soy.jpg" class="card-img-top producto-imagen" alt="devops">
-                        <div class="card-body  producto-detalle">
-                          <h5 class="card-title producto-titulo">Roma soy yo</h5>
-                          <p class="producto-precio">$17.500</p>
-                          <p class="card-text">Facilita la comunicación y colaboración entre los equipos de desarrollo y operaciones, combinando habilidades técnicas y de gestión para automatizar los procesos de desarrollo para mejorar la calidad y velocidad en la entrega de software</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                    <div class="card producto" >
-                      <img src="../img/una.magia.jpg" class="card-img-top producto-imagen" alt="KAM">
-                        <div class="card-body  producto-detalle">
-                          <h5 class="card-title producto-titulo">Una magia más oscura</h5>
-                          <p class="producto-precio">$29.130</p>
-                          <p class="card-text">Kell es uno de los últimos magos viajeros con una extraña habilidad para viajar entre universos paralelos conectados por una ciudad mágica..</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                    <div class="card producto" >
-                      <img src="../img/cuerpos.png" class="card-img-top producto-imagen" alt="salesforce">
-                        <div class="card-body  producto-detalle">
-                          <h5 class="card-title producto-titulo">Cuerpos</h5>
-                          <p class="producto-precio">$3.200</p>
-                          <p class="card-text">Ruth es una actriz fracasada que atraviesa un momento personal muy difícil. Una noche decide ser otra. Se pone una peluca y se disfraza de un modo muy sexy para, bajo una identidad falsa, salir a ligar.. </p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                    <div class="card producto">
-                      <img src="../img/malas.mujeres.jpg" class="card-img-top producto-imagen" alt="analisis_de_datos">
-                        <div class="card-body  producto-detalle">
-                          <h5 class="card-title producto-titulo">Malas muejeres</h5>
-                          <p class="producto-precio">$18.160</p>
-                          <p class="card-text">Desde la aparición de los primeros mitos, lo universal ha sido la narración de los hombres, esa visión masculina que dibujó a unos y a otras, nos dijo cómo debíamos ser -puras, dóciles, amorosas- y previno al mundo de la.</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                    <div class="card producto">
-                      <img src="../img/persepolis.jpg" class="card-img-top producto-imagen" alt="soporte_tecnico">
-                        <div class="card-body  producto-detalle">
-                          <h5 class="card-title producto-titulo">Persépolis</h5>
-                          <p class="producto-precio">$17.060</p>
-                          <p class="card-text">Nos cuenta la revolución islámica iraní vista desde los ojos de una niña que asiste atónita al cambio profundo que experimentan su país y su familia, mientras ella debe aprender a llevar el velo..</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                    <div class="card producto">
-                      <img src="../img/algo.resuena.png" class="card-img-top producto-imagen" alt="ventas">
-                        <div class="card-body producto-detalle">
-                          <h5 class="card-title producto-titulo">Algo resuena en lo profundo</h5>
-                          <p class="producto-precio">$4.470</p>
-                          <p class="card-text">En su constante búsqueda de felicidad y paz, el hombre, debilitado por el entorno en el que vive, ha perdido el sentido de lo sagrado y lo absoluto que, a su vez, lo fragmenta y despersonaliza.</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-xl-3 ">
-                    <div class="card producto">
-                      <img src="../img/ando.lento.jpg" class="card-img-top producto-imagen" alt="aws">
-                        <div class="card-body  producto-detalle">
-                          <h5 class="card-title producto-titulo">Ando lento</h5>
-                          <p class="producto-precio">$13.950</p>
-                          <p class="card-text">¿Qué clase de personas queremos ser? ¿A qué nos aferramos cuando no hay salida posible? ¿Cómo es el mundo en el que anhelamos vivir? ¿Cuál es el sentido de nuestra existencia? .</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-xl-3 ">
-                    <div class="card producto">
-                      <img src="../img/despantallado.jpg" class="card-img-top producto-imagen" alt="UX_UI">
-                        <div class="card-body  producto-detalle">
-                          <h5 class="card-title producto-titulo">Despantallado</h5>
-                          <p class="producto-precio">$9.520</p>
-                          <p class="card-text">Después de sufrir un porrazo en su skate, Felipe termina con el brazo enyesado y sin poder practicar su deporte favorito, por lo tanto, sin nuevos videos de sus piruetas para compartir con sus seguidores en redes sociales.Aburrido y frustrado por no poder mantener su popularidad,.</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        </div>
-                    </div>
-                  </div>
-
-                </div>-->
+               <!-- completado con js -->
               </div>  
                     
     

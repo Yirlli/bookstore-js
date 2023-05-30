@@ -12,8 +12,30 @@ background-size: contain;
 height: 50rem; display: flex;
 flex-direction: column;}
 
-.libro-detalle{background-color: rgb(160, 160, 216);
+.libro-detalle{background-color: rgba(28, 209, 164, 0.658);
     
+}
+.producto-filtrado{
+    padding: 2rem;
+}
+.card-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 5rem;
+}
+.contenedor-libros{
+  
+}
+.filtro-imagen{
+    width: 13vw;
+}
+
+.division{
+ 
+    display: flex;
+    flex-direction: column;
 }
 .principal h1{
     text-align: center;
@@ -99,9 +121,7 @@ padding-right: 0;}
     background-color: rgba(238, 150, 194, 0.753);
    
 }
-.libro-imagen{
-   
-}
+
 
 .suscribe_boletin{
     margin-top: 3rem;

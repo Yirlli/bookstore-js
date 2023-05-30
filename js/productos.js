@@ -19,13 +19,13 @@ function cargarProductos(libros){
 
     div.innerHTML = `
                         <div class="card producto">
-                        <img class="producto-imagen card-img-top " src="${libro.imagen}" alt="${libro.titulo}">
+                        <img class="producto-imagen card-img-top " src=".${libro.imagen}" alt="${libro.titulo}">
                         <h6 class="producto-autor">${libro.autor}</h6>
                         <h4 class="card-title producto-titulo">${libro.titulo}</h4>
                         <p class="producto-precio producto-precio">$${libro.precio.toLocaleString('es-CL')}</p>
                         <button class="producto-agregar boton-libro" id="${libro.id}">Agregar al carrito</button>
                         <button class="verDetalle boton-libro" id="${libro.id}">Ver detalle</button>
-                        <button class="comprar boton-libro" id="${libro.id}"><a href=./carrito.html>Comprar ahora</a></button>
+                       
                         
                     </div> `;
 

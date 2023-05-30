@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>BookStore | Libros Disponibles</title>
+    <meta name="keywords" content="LIBROS, HISTORIA, ROMANTICOS, POEMAS">
+    <meta name="description" content="Encuentra los mejores libros, en tendencias y atemporales a los mejores precios">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">BookStore</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cuenta
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Inicia Sesión</a></li>
+                  <li><a class="dropdown-item" href="#">Crear Cuenta</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" id="search-item"placeholder="¿Qué libro estás buscando?" aria-label="Search">
+              <button class="btn buscar btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+        
+    <main class="main-productos">   
+        <h1 class="titulo_todas_las_asesorias" id="titulo-todos">Todos los libros</h1>
+        <div class="btn-group">
+          <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Filtrar por
+          </button>
+          <ul class="dropdown-menu" name="cars" id="cars">
+           <li><button class="filtrarPor"id="menor500">Menor a 500</button> </li>
+           <li><button class="filtrarPor" id="mayor500">Mayor a 500</button> </li>
+           
+       
+          </ul>
+          
+        </div>
+        <section class="todas_las_asesorias d-flex">
+            <section class="d-flex barra_lateral">
+                <aside>
+                    <nav>
+                        <ul class="menu">
+                            <li><button id="todos"class="boton-menu boton-categoria active">Todas las categorías</button></li>
+                            <li><button id ="biografia" class=" boton-menu boton-categoria">Biografía</button></li>
+                            <li><button  id="romanticas"class=" boton-menu boton-categoria">Novelas románticas</button></li>
+                            <li><button  id="graficas"class=" boton-menu boton-categoria">Novelas gráficas</button></li>
+                            <li><button id="ficcion" class=" boton-menu boton-categoria">Ficción</button></li>
+                            <li><button id="autoayuda"class=" boton-menu boton-categoria">Autoayuda</button></li>
+                            <li><button id="historia"class="boton-menu boton-categoria">Historia</button></li>
+                            <li><button id="infantil"class="boton-menu boton-categoria">Literatura Infantil</button></li>
+                            <li><a class ="boton-carrito boton-menu" href="./carrito.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                              </svg></i> Carrito</span></a> <span class="CantidadCarrito" id="CantidadCarrito">0 </li>
+                              
+
+                            
+                        </ul>
+                        <footer>
+                            Copryght 2023
+                        </footer>
+                    </nav>
+                    
+                  
+                </aside>
+            </section>
+        
+            
+              <div class="container-md text-center box_categorias row flex gy-5 " id="contenedor-productos">
+                
+               <!-- completado con js -->
+              </div>  
+              <div class="libro-filtrado"></div> 
+    
+
+
+    </main>
+    <div class="d-flex justify-content-center">
+        <a href="../index.html" class="volver">Volver a página de Inicio</a>
+    </div>
+    <div class="suscribe_boletin d-flex justify-content-center" style="flex-direction: column;">
+      <h2>Recibe información mensual con temas relevantes y claves para ir desarrollando tus habilidades</h2>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu email...">
+      <Button type="submit">Enviar</Button>
+  </div>
+   
+   <script src="../js/listaDeProductos.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>  
+
+     <script src="../js/productos.js"></script>
+    </body>
+</html>

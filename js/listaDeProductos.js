@@ -11,7 +11,7 @@ class Libro { constructor (titulo, imagen,autor, editorial,precio,stock,categori
     this.categoria = categoria;
     this.id = id;
     this.sku = sku;
-    this.descripcion;
+    this.descripcion = descripcion;
 }
 }
 const en_la_sombra = new Libro("En La Sombra" ,"../img/sombra.harry.jpg", "Principe Harry","Plaza & Janes", 13600, 25, "Biografía", "biografia", "AA183",
@@ -35,7 +35,7 @@ const persepolis = new Libro("Persépolis", "../img/persepolis.jpg" , "Marjane S
 const algo_resuena = new Libro ("Algo resuena en lo profundo", "../img/algo.resuena.png","Canals Sergio","Uqbar Editores", 4470, 88, "Autoayuda", "autoayuda","GF481",
 "En su constante búsqueda de felicidad y paz, el hombre, debilitado por el entorno en el que vive, ha perdido el sentido de lo sagrado y lo absoluto que, a su vez, lo fragmenta y despersonaliza. Este libro es una invitación del doctor Sergio Canals L. a reflexionar en torno al sentido que damos a nuestra vida, la capacidad de amar y ser amados, trascender más allá de la muerte, etc. ¿Existe algo más tremendo que el sinsentido?, ¿algo más doloroso que la soledad, el vacío?");
 const ando_lento = new Libro ("Ando lento", "../img/ando.lento.jpg","May Patricia", "Urano",13950, 1, "Autoayuda", "autoayuda","GF112", "¿Qué clase de personas queremos ser? ¿A qué nos aferramos cuando no hay salida posible? ¿Cómo es el mundo en el que anhelamos vivir? ¿Cuál es el sentido de nuestra existencia? Preguntas como estas parecen retóricas en tiempos de confusión y prisa, donde la velocidad, las apariencias y la angustia constante que acompañan el vivir, impiden la pausa y la reflexión acerca de nuestras certezas.");
-const despantallado = new Libro("Despantalaldo", "../img/despantallado.jpg","Fabian Rivas" ,"ZIG-ZAG", 9520, 33, "Literatura Infantil", "infantil", "DD424", "Después de sufrir un porrazo intentando lucirse con una nueva y arriesgada pirueta en su skate, Pipe termina con el brazo enyesado, sin poder practicar su deporte favorito durante lo que le parece una eternidad, y para peor, sin nuevos videos para compartir con sus seguidores en redes sociales. Aburrido y frustrado por no poder mantener su popularidad, Pipe deberá encontrar nuevas formas de canalizar su energía y explorar su creatividad, aprendiendo a adaptarse a su nueva situación");
+const despantallado = new Libro("Despantallado", "../img/despantallado.jpg","Fabian Rivas" ,"ZIG-ZAG", 9520, 33, "Literatura Infantil", "infantil", "DD424", "Después de sufrir un porrazo intentando lucirse con una nueva y arriesgada pirueta en su skate, Pipe termina con el brazo enyesado, sin poder practicar su deporte favorito durante lo que le parece una eternidad, y para peor, sin nuevos videos para compartir con sus seguidores en redes sociales. Aburrido y frustrado por no poder mantener su popularidad, Pipe deberá encontrar nuevas formas de canalizar su energía y explorar su creatividad, aprendiendo a adaptarse a su nueva situación");
 
 const libros = [en_la_sombra, reina_charlotte ,dolor_no_es_mio, muchas_vidas,  roma_soy_yo, una_magia_oscura, cuerpos, malas_mujeres, persepolis, algo_resuena, ando_lento, despantallado
 

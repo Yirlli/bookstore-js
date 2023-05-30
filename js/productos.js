@@ -99,40 +99,9 @@ function actualizarCantidadProductosCarrito(){
 }
 
 
-const busca = document.getElementById("buscar")
 
-const input = document.getElementById('search-item').value 
 
-input.addEventListener("keyup", filtrarProductos)
-function filtrarProductos(){
-    const body = document.querySelector('libro-filtrado');
- //traigo el valor del imput
-  
-    const palabraClave = input.trim().toUpperCase();
-  
-    const resultado = libros.filter((producto) => producto.nombre.toUpperCase().includes(palabraClave));
-  
-    if (resultado.length > 0) {
-        boxDeProductos.innerHTML= "";
-        const div = document.createElement("div");
-        
-        div.classList.add("col-12");
-        div.classList.add("col-sm-6");
-        div.classList.add("col-md-4");
-        div.classList.add("col-xl-3");
-    
-        div.innerHTML = `
-                            <div class="card producto">
-                            <img class="producto-imagen card-img-top " src="${libro.imagen}" alt="${libro.titulo}">
-                            <h6 class="producto-autor">${libro.autor}</h6>
-                            <h4 class="card-title producto-titulo">${libro.titulo}</h4>
-                            <p class="producto-precio producto-precio">$${libro.precio.toLocaleString('es-CL')}</p>
-                            <button class="producto-agregar boton-libro" id="${libro.id}">Agregar al carrito</button>
-                            <button class="verDetalle boton-libro" id="${libro.id}">Ver detalle</button>
-                            <button class="comprar boton-libro" id="${libro.id}"><a href=./carrito.html>Comprar ahora</a></button>
-                            
-                        </div> `;
-    
-                        body.append(div);
 
-    }}
+
+
+

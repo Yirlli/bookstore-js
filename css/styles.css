@@ -9,11 +9,22 @@ color: black;}
 
 .principal{background-image: url(../img/old-books-arrangement-with-copy-space.jpg);
 background-size: contain;
-height: 50rem;}
+height: 50rem; display: flex;
+flex-direction: column;}
 
-.top-seller{background-color: rgb(24, 24, 48);
+.libro-detalle{background-color: rgb(160, 160, 216);
+    
+}
+.principal h1{
+    text-align: center;
+    margin-top: 13rem;
+    margin-bottom: 2rem;
 }
 
+.principal button{
+    
+    align-self: center;
+}
 .contacto-pag{
     background-image: url(../img/creative-composition-with-different-books.jpg);
     height: 100vh;
@@ -21,7 +32,11 @@ height: 50rem;}
     
 }
 
-
+.form-control{
+    width: 30vw;
+    align-self: center;
+    margin-top: 3rem;
+}
 
 .fondo_apertura{
     margin-top: 8rem;
@@ -44,6 +59,15 @@ padding-top: 5rem;
 border-radius: .5rem;
 padding-right: 0;}
 
+.buscar{
+    border-radius: .2rem;
+    background-color: rgb(231, 111, 171);
+    width: 5vw;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    border: none;
+    padding:.5rem;
+}
 .boton-menu{
     border-radius: .2rem;
     background-color: rgb(231, 111, 171);

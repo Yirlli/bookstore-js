@@ -10,8 +10,9 @@ let botonEliminar = document.querySelectorAll("#carrito-producto-eliminar");
 const botonVaciar= document.querySelector("#carrito-boton-vaciar");
 const contenedorTotal= document.querySelector("#montoTotal");
 const botonComprar = document.querySelector("#carrito-boton-comprar");
-const btnVerDetalle = document.querySelector(".verDetalle");
-//const boxVerDetalle = document.querySelector(".box-ver-detalle")
+const botonVolver= document.querySelector(".boton-volver");
+
+
 
 function cargarProductosCarrito(){
     if(productosEnCarrito && productosEnCarrito.length>0){
@@ -116,6 +117,8 @@ function comprarCarrito(){
     contenedorCarritoAcciones.classList.add("disabled");
     contenedorCarritoComprado.classList.remove("disabled");
     contenedorCarritoImagen.classList.add("on");
+    botonVolver.classList.add("disabled");
+
 
     }
 function cargarProductosCarrito(){
@@ -168,73 +171,10 @@ function cargarProductosCarrito(){
        boxCarritoLibros.classList.add("disabled");
         contenedorCarritoAcciones.classList.add("disabled");
         contenedorCarritoComprado.classList.add("disabled");
+        botonVolver.classList.add("disabled");
     }
 
     actualizarBotonEliminar();
     actualizarMontoTotal();
 }
 cargarProductosCarrito();
-
-btnVerDetalle.addEventListener("click", botonDetalle)
-
-function botonDetalle(){
-
-    boxCarritoVacio.classList.add("disabled");
-    boxCarritoLibros.classList.add("disabled");
-    contenedorCarritoAcciones.classList.add("disabled");
-    contenedorCarritoComprado.classList.add("disabled");
-    boxVerDetalle.classList.remove("disabled")
-
-    /*libroSeleccionado.forEach(libro => {
-    const div= document.createElement("div");
-    div.classList.add("detalles-libros");
-    div.innerHTML = `<img class="detalle-libro-imagen" src="${libro.imagen}" alt="${libro.titulo}">
-                    <div class="detalle-libro-titulo">
-                        <small>Titulo</small>
-                        <h3>${libro.titulo}</h3>
-                    </div>
-                    <div class="detalle-stock-cantidad">
-                        <small>Disponibilidad</small>
-                        <p>${libro.stock}</p>
-                    </div>
-                    <div class="detalle-libro-cantidad">
-                        <small>Cantidad</small>
-                        <p>${libro.cantidad}</p>
-                    </div>
-                    <div class="detalle-libro-precio">
-                        <small>Precio</small>
-                        <p>$${libro.precio.toLocaleString('es-CL')}</p>
-                    </div>
-            
-                   
-                `;
-
-                boxVerDetalle.append(div)
-    
-
-})*/
-
-
-} 
-
-
-/*
-
-botoneVerDetalleLibro.forEach(boton => {
-    boton.addEventListener("click", (e) => {
-        //removemos el atributo active
-        botoneVerDetalleLibro.forEach(boton => boton.classList.remove("disabled"));
-
-  
-        //se filta el producto segun su categoria
-
-    
-            const productoMostrar = libros.find(libro => libro.id ===e.currentTarget.id)
-           
-            tituloPrincipal.innerText = productoCategoria.categoria;
-
-       
-   
-    })
-});
-*/

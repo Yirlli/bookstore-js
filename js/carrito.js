@@ -135,7 +135,7 @@ function cargarProductosCarrito(){
         productosEnCarrito.forEach(libro => {
         const div= document.createElement("div");
         div.classList.add("carrito-libros");
-        div.innerHTML = `<img class="carrito-libro-imagen" src="${libro.imagen}" alt="${libro.titulo}">
+        div.innerHTML = `<img class="carrito-libro-imagen" src=".${libro.imagen}" alt="${libro.titulo}">
                         <div class="carrito-libro-titulo">
                             <small>Titulo</small>
                             <h3>${libro.titulo}</h3>

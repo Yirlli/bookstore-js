@@ -1,3 +1,4 @@
+
 const busca = document.getElementById("busqueda")
 busca.addEventListener("click", () =>{
     filtrarProductos();

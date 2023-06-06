@@ -24,10 +24,7 @@ function filtrarProductos(){
         resultado.forEach((libro) =>{
             const div = document.createElement("div");
             div.classList.add('contenedor-libros');
-        
-        
-       
-        
+
             div.innerHTML = `
                                 <div class="card producto-filtrado">
                                 <img class="filtro-imagen card-img-top " src="${libro.imagen}" alt="${libro.titulo}">

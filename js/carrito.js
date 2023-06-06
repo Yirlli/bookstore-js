@@ -83,6 +83,7 @@ function actualizarBotonEliminar(){
 }
 
 function eliminarDelCarrito(e){
+    
     const idBoton = e.currentTarget.id;
    // const productoEliminado = productosEnCarrito.find(producto=> producto.id === idBoton);
     const index = productosEnCarrito.findIndex(libro => libro.id === idBoton);
@@ -96,9 +97,27 @@ botonVaciar.addEventListener("click", vaciarCarrito)
 
 
 function vaciarCarrito(){
-productosEnCarrito.length = 0;
-localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito))
-cargarProductosCarrito();
+    Swal.fire({
+        title: '¿Estás seguro?',
+        icon: 'warning',
+        html: `Se van a eliminar ${productosEnCarrito.reduce((acc,libro) => acc + libro.cantidad, 0)} producto/s`,
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Sí, deseo eliminarlos!',
+        cancelButtonText: 'No'
+      }).then((result) => {
+        if (result.isConfirmed) {
+            productosEnCarrito.length = 0;
+            localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito))
+             cargarProductosCarrito();
+          Swal.fire(
+            'Productos eliminados satisfactoriamente.',
+            'success'
+          )
+        }
+      })
+
 }
 
 function actualizarMontoTotal(){
@@ -178,3 +197,4 @@ function cargarProductosCarrito(){
     actualizarMontoTotal();
 }
 cargarProductosCarrito();
+

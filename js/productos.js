@@ -1,4 +1,10 @@
+let libros =[];
 
+fetch("../js/listaProductos.json")
+    .then(response => response.json())
+    .then(data =>{ libros = data;
+    cargarProductos(libros);
+})
 
 const boxDeProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
@@ -76,6 +82,14 @@ if(productosEnCarritoLS){
 }
 
 function agregarAlCarrito(e){
+
+    Swal.fire({
+    position: 'center',
+    icon: 'success',
+    title: 'Su producto ha sido agregado satisfactoriamente',
+    showConfirmButton: false,
+    timer: 1500
+    })
 
     const idBoton= e.currentTarget.id;
     const productoAgregado = libros.find(libro => libro.id === idBoton);

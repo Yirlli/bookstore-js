@@ -15,6 +15,27 @@ flex-direction: column;}
 .libro-detalle{background-color: rgba(28, 209, 164, 0.658);
     
 }
+
+.filtro{
+
+}
+.filtroPrecio{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+}
+.filtroPrecio button{
+    width: 10rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    border-radius: .2rem;
+    background-color: rgb(231, 111, 171);
+    border: none;
+    
+}
+.filtroPrecio input{
+    margin-top: .4rem;
+}
 .producto-filtrado{
     padding: 2rem;
 }
@@ -25,6 +46,10 @@ flex-direction: column;}
     flex-direction: row;
     padding: 5rem;
 }
+
+.tituloDeCategorias{text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;}
 .contenedor-libros{
   
 }
@@ -75,7 +100,7 @@ flex-direction: column;}
     background-color: rgba(28, 209, 164, 0.658);
     padding: 2rem;
 }
-.menu{ background-color: rgba(28, 209, 164, 0.658) ;
+.tiposCategorias{ background-color: rgba(28, 209, 164, 0.658) ;
 height: 130vh;
 padding-top: 5rem;
 border-radius: .5rem;
@@ -90,7 +115,7 @@ padding-right: 0;}
     border: none;
     padding:.5rem;
 }
-.boton-menu{
+.btnMenu{
     border-radius: .2rem;
     background-color: rgb(231, 111, 171);
     width: 15vw;
@@ -100,7 +125,7 @@ padding-right: 0;}
     padding:.5rem;
 }
 
-.boton-carrito{
+.btnCarrito{
     margin-top: 6rem;
     margin-right: .1rem;
     margin-left: 3rem;
@@ -110,14 +135,14 @@ padding-right: 0;}
    
 }
 
-.boton-libro{
+.btnLibro{
     background-color: rgb(231, 111, 171);
     border: none;
     border-radius: 1rem;
     margin: .2rem;
 }
 
-.boton-libro:hover{
+.btnLibro:hover{
     background-color: rgba(238, 150, 194, 0.753);
    
 }
@@ -155,7 +180,7 @@ padding-right: 0;}
     padding: 10rem;
     border-radius: 2rem;
 }
-.contenedor-carrito{
+.contenedorCarrito{
     background-color: rgba(28, 209, 164, 0.658);
     padding-top: 10rem;
     display:flex;
@@ -167,7 +192,7 @@ padding-right: 0;}
 
 }
 
-.carrito-vacio{text-align: center;
+.carritoEmpty {text-align: center;
 padding: 1.5rem;}
 
 .carrito button{ width: 18rem;
@@ -182,21 +207,19 @@ color: aliceblue;}
 }
 
 
-.titulo_todas_las_asesorias{text-align: center;
-padding-top: 4rem;
-padding-bottom: 4rem;}
-
 .btn-group{
 
     display: flex;
     width: 10vw;
-    margin-left: 60rem;
-    margin-bottom: 2rem;
+ 
+    margin-bottom: 8rem;
     background-color: rgb(231, 111, 171);
-
+border: none;
 }
+
+.cajaFiltro
 .dropdown-menu{
-width: 10vw;
+width: 18vw;
 background-color: none;
 }
 
@@ -209,14 +232,25 @@ background-color: none;
 
 /*carrito de compras*/
 
+.btnAumentar, .btnDisminuir{
+    border-radius: 1rem;
+    background-color: rgb(231, 111, 171);
+    margin: .4rem;
 
-.carrito-vacio h2{
+}
+
+small{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.carritoEmpty  h2{
     font-size: 35px;
    padding-top: 8rem;
    padding-bottom: 2rem;
    font-weight: bold;
 }
-.carrito-vacio button{
+.carritoEmpty  button{
     font-size: 20px;
     margin-top: 4rem;
     background-color: rgb(231, 111, 171);
@@ -236,7 +270,7 @@ padding-top: 0;
 padding-bottom: 0rem;
 
 }
-.carrito-vacio h3{
+.carritoEmpty  h3{
     margin-top: 1rem;
     font-size: 25px;
 }
@@ -255,17 +289,17 @@ padding-bottom: 0rem;
     border-radius: 1rem;
     align-items: center;
 }
-.carrito-libro-imagen{
+.libroImagenEnCarrito{
     width: 4rem;
     border-radius: 1rem;
 }
 
-.carrito-libros small{
+.librosEnCarrito small{
     font-size: .85rem;
     font-weight: bold;
 }
 
-.carrito-producto-eliminar{
+.eliminarLibroCarrito{
     border: 0;
     background-color: transparent;
     width: 7vw;
@@ -274,7 +308,7 @@ padding-bottom: 0rem;
     
 }
 
-.carrito-libro-titulo h3{
+.carritoTituloLibro h3{
     font-size: 15px;
     flex-wrap: nowrap;
     width: 10vw;
@@ -285,7 +319,7 @@ padding-bottom: 0rem;
     justify-content: space-between;
 }
 
-.carrito-boton-vaciar{
+.vaciarCarrito{
     border: 0;
     background-color: rgb(231, 111, 171);
     border-radius: 1rem;
@@ -295,7 +329,7 @@ padding-bottom: 0rem;
     margin-left: 1rem;
 }
 
-.carrito-boton-comprar{
+.btnComprarCarrito{
     border: 0;
     background-color: rgb(231, 111, 171);
     padding: 1rem;
@@ -310,7 +344,7 @@ padding-bottom: 0rem;
     display: flex;
 }
 
-.carrito-monto-total{
+.montoTotalCarrito{
     display: flex;
     background-color: rgb(231, 111, 171);
     padding: .5rem;
@@ -324,7 +358,7 @@ padding-bottom: 0rem;
     margin-right: 1rem;
 }
 
-.carrito-compra-realizada{
+.compraRealizada{
     font-weight: bold;
     font-size: 30px;
     width: 30vw;
@@ -343,7 +377,7 @@ padding-bottom: 0rem;
 
 @media (max-width: 576px) {s
 
-    .menu{
+    .tiposCategorias{
         padding: 0;
         margin: 0;
     }
@@ -354,12 +388,12 @@ padding-bottom: 0rem;
      
         font-size: 15px;
     }
-.carrito-libros{flex-direction: column;}
+.librosEnCarrito{flex-direction: column;}
 
 .carrito-acciones{
     flex-direction: column;
 }
-.carrito-boton-vaciar{
+.vaciarCarrito{
     
 }
 .btn{
@@ -367,11 +401,11 @@ padding-bottom: 0rem;
     width: 18vw;
 }
 
-.carrito-monto-total{
+.montoTotalCarrito{
     width: 18vw;
 }
 
-.carrito-monto-total p{
+.montoTotalCarrito p{
     font-size: 15px;
 }
 .box-carrito-compra{

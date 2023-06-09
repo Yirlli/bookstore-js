@@ -1,10 +1,19 @@
+let libros =[];
+
+fetch("./js/listaProductos.json")
+    .then(response => response.json())
+    .then(data =>{ libros = data;
+    despliegueLibros(libros);
+})
+
+
 
 const busca = document.getElementById("busqueda")
 busca.addEventListener("click", () =>{
-    filtrarProductos();
+    filtrarLibros();
 })
 
-function filtrarProductos(){
+function filtrarLibros(){
     
     
  //traigo el valor del imput

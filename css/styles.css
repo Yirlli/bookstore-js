@@ -218,10 +218,7 @@ border: none;
 }
 
 .cajaFiltro
-.dropdown-menu{
-width: 18vw;
-background-color: none;
-}
+
 
 .filtrarPor{
     border: none;
@@ -381,10 +378,10 @@ padding-bottom: 0rem;
         padding: 0;
         margin: 0;
     }
-    .boton-menu{
+    .btnMenu{
         width: 27vw;
-        padding: 0.2;
-        margin-right: 0.5rem;
+        padding: 0;
+        margin-right: 0;
      
         font-size: 15px;
     }
@@ -393,8 +390,14 @@ padding-bottom: 0rem;
 .carrito-acciones{
     flex-direction: column;
 }
-.vaciarCarrito{
+
+.boxVaciarCarrito{
+    display: flex;
     
+}
+.vaciarCarrito{
+    width: 100vw;
+    align-self: center;
 }
 .btn{
     font-size: 13px;
@@ -410,4 +413,42 @@ padding-bottom: 0rem;
 }
 .box-carrito-compra{
     flex-direction: column;
-}}
+
+}
+.btn-group{
+    width: 8rem;
+}
+.dropdown-menu{
+    width: 85vw;
+}
+
+.main-carrito{
+    padding: 2rem;
+}
+.carritoEmpty button{
+    width: 35vw;
+}
+
+.carrito-libros{
+    display: flex;
+    flex-direction: column;
+}
+
+.montoTotalCarrito {
+    width: 20vw;
+    padding: .2rem;
+}
+.btnComprarCarrito{width: 40vw;
+padding: .2rem;}
+
+.on{
+    height:44vh ;
+    margin-top: 4rem;
+}
+
+.compraRealizada{
+    width: 60vw;
+    font-size: 25px;
+    padding-top: 25rem;
+}
+}
